@@ -1,0 +1,44 @@
+\documentclass[onecolumn,spanish]{IEEEtran}
+\usepackage[spanish]{babel} 
+\usepackage[latin1]{inputenc}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\DeclareRobustCommand*{\lyxarrow}{%
+\@ifstar
+{\leavevmode\,$\triangleleft$\,\allowbreak}
+{\leavevmode\,$\triangleright$\,\allowbreak}}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+% protect \markboth against an old bug reintroduced in babel >= 3.8g
+\let\oldforeign@language\foreign@language
+\DeclareRobustCommand{\foreign@language}[1]{%
+  \lowercase{\oldforeign@language{#1}}}
+\newtheorem{thm}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\makeatother
+
+\usepackage{babel}
+
+\begin{document}
+
+\title{Taller 2}
+
+
+\author{Carlos López Roa%
+\thanks{Centro de Física aplicada y tecnología avanzada\ldots{}%
+}}
+\maketitle
+
+\markboth{Carlos López Roa}{Computación I}
+
+\section{Números naturales}
+Obtener el valor de las siguiente expresiones: \newline
+$\frac{19!*148!}{17!*150!}$
+
+\end{document}
